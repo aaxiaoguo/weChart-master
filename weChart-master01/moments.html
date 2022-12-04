@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>朋友圈</title>
+	<link rel="stylesheet" href="http://coding.imweb.io/demo/reset.css">
+	<!-- 页面样式 -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page-moments">
+	<header class="header">
+		<div class="header-banner"></div>
+		<div class="header-user">
+			<span class="user-name"></span>
+			<a class="user-link" href="#"><img src="./img/avatar1.png" width="70" height="70" alt=""></a>
+		</div>
+	</header>
+	<div class="moments-list">
+		<!-- 消息内容 -->
+	</div>
+</div>
+<!--评论弹出框（默认隐藏）-->
+<div class="review-box-Shell">
+	<div class="review-box">
+		<input type="text" class="review-box-input">
+		<button class="review-box-sent">发送</button><!-- Enabled="false" -->
+	</div>
+</div>
+<!--背景图片的弹出层（默认隐藏）-->
+<div class="bg-img-out">
+	<div class="bg-img"></div>
+</div>
+<!-- 引入jQuery -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<!-- 页面逻辑代码 -->
+<script src="./app.js"></script>
+</body>
+</html>

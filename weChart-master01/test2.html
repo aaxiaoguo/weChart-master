@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <style>
+  .bianse{
+   background-color: pink;
+  }
+ </style>
+ <script>
+  window.οnlοad=function(){
+   var buts=document.getElementsByTagName("button");
+   for (var i=0;i<buts.length;i++) {
+    buts[i].index=i;//记录索引号
+    buts[i].οnclick=function(){
+//     alert(this.index);在这验证了索引号
+     for(var i=0;i<buts.length;i++)
+     {
+     
+      //排除所有
+      buts[i].className="";
+     }
+     this.className="bianse";  //给自己加样式
+    }
+   }
+  }
+ </script>
+ <body>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+  <button>点击后变色</button>
+ </body>
+</html>
+
